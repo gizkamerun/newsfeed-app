@@ -1,0 +1,15 @@
+{
+  "name": "pwanews",
+  "version": "1.0.0",
+  "description": "News aggregator app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "workbox-sw": "^3.0.0"
+  }
+}

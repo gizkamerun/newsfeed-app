@@ -1,0 +1,8 @@
+{
+    "name": "Reading App",
+    "short_name": "eMags",
+    "description": "Aggragate latest News Articles and eBooks",
+    "lang": "en-US",
+    "start_url": "/",
+    "display": "standalone"
+}
