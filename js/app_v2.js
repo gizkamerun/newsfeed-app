@@ -134,8 +134,8 @@ function createArticle(article){
             <img class="card-img-top img-responsive" src="${article.thumbnail}" alt="Card image cap">
             </a>
         <div class="card-body">
-        <h5 class="card-title">"`+ decodeURIComponent(escape(${article.title})) +`"</h5>
-        <p class="card-text  img-responsive">"`+ decodeURIComponent(escape(${article.description.substring(0,400)})) +`"</p>
+        <h5 class="card-title">`${article.title}`</h5>
+        <p class="card-text  img-responsive">`${article.description.substring(0,400)}`</p>
         
         </div>
         <div class="card-footer">
