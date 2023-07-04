@@ -134,8 +134,8 @@ function createArticle(article){
             <img class="card-img-top img-responsive" src="${article.thumbnail}" alt="Card image cap">
             </a>
         <div class="card-body">
-        <h5 class="card-title">${article.title}</h5>
-        <p class="card-text  img-responsive">${article.description.substring(0,400)}</p>
+        <h5 class="card-title">decodeURIComponent(escape(${article.title}))</h5>
+        <p class="card-text  img-responsive">decodeURIComponent(escape(${article.description.substring(0,400)}))</p>
         
         </div>
         <div class="card-footer">
@@ -161,9 +161,9 @@ function createBook(book){
     return  `<div class="col-sm-6 col-md-4"> 
         <div class="thumbnail"> 
             <img alt="100%x200" data-src="js/holder.js/100%x200" src="${book.Image}"> 
-            <div class="caption"> <h3>${book.Title}</h3> 
-            <small>${book.SubTitle}</small> 
-            <p>${book.Description}</p> 
+            <div class="caption"> <h3>decodeURIComponent(escape(${book.Title}))</h3> 
+            <small>decodeURIComponent(escape(${book.SubTitle}))</small> 
+            <p>decodeURIComponent(escape(${book.Description}))</p> 
             <p>
             <a href="http://it-ebooks.info/book/${book.ID}" class="btn btn-primary" role="button">more ...</a>
             <a href="${book.Download}" class="btn btn-secondary" role="button">Download</a>
