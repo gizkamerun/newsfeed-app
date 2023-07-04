@@ -86,8 +86,8 @@ function createArticle(article){
     <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${article.urlToImage}" alt="Card image cap">
         <div class="card-body">
-        <h5 class="card-title">${article.title}</h5>
-        <p class="card-text">${article.description}</p>
+        <h5 class="card-title">decodeURIComponent(escape(${article.title}))</h5>
+        <p class="card-text">decodeURIComponent(escape(${article.description}))</p>
         <a href="${article.url}" class="btn btn-primary">read more</a>
         </div>
     </div>
