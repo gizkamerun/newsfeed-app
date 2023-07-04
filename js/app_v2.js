@@ -161,9 +161,9 @@ function createBook(book){
     return  `<div class="col-sm-6 col-md-4"> 
         <div class="thumbnail"> 
             <img alt="100%x200" data-src="js/holder.js/100%x200" src="${book.Image}"> 
-            <div class="caption"> <h3>"`decodeURIComponent(escape(${book.Title})) `"</h3> 
-            <small>` decodeURIComponent(escape(${book.SubTitle}))` </small> 
-            <p>` decodeURIComponent(escape(${book.Description}))` </p> 
+            <div class="caption"> <h3>"decodeURIComponent(escape(${book.Title}))"</h3> 
+            <small>decodeURIComponent(escape(${book.SubTitle})) </small> 
+            <p> decodeURIComponent(escape(${book.Description})) </p> 
             <p>
             <a href="http://it-ebooks.info/book/${book.ID}" class="btn btn-primary" role="button">more ...</a>
             <a href="${book.Download}" class="btn btn-secondary" role="button">Download</a>
